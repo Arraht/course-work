@@ -83,9 +83,6 @@ public class Employee {
     }
 
     public int getId() {
-        Counter count = new Counter();
-        int id = count.getCount();
-        count.increment();
         return id;
     }
 
