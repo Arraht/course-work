@@ -1,7 +1,5 @@
-package program.employees;
+package program.objects.employees;
 
-
-import program.counter.Counter;
 
 import java.text.NumberFormat;
 

@@ -1,6 +1,6 @@
 package program.methods.search.min;
 
-import program.employees.Employee;
+import program.objects.employees.Employee;
 
 import java.text.NumberFormat;
 

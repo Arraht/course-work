@@ -1,4 +1,4 @@
-package program.counter;
+package program.objects.counter;
 
 public class Counter {
     private int count;

@@ -1,6 +1,6 @@
 package main;
 
-import program.employees.Employee;
+import program.objects.employees.Employee;
 
 import static program.methods.list.AddEmployees.addEmployees;
 import static program.methods.calculation.CalculationCost.calculationCost;

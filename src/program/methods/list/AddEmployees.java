@@ -1,7 +1,7 @@
 package program.methods.list;
 
-import program.counter.Counter;
-import program.employees.Employee;
+import program.objects.counter.Counter;
+import program.objects.employees.Employee;
 
 import java.util.Arrays;
 
