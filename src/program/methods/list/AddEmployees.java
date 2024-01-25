@@ -6,8 +6,12 @@ import program.employees.Employee;
 import java.util.Arrays;
 
 public class AddEmployees {
-    public static void addEmployees(Employee[] employees , String firstName, String middleName, String lustName,
-                                    int department, int salary) {
+    public static void addEmployees(Employee[] employees) {
+        String firstName = "";
+        String middleName = "";
+        String lustName = "";
+        int department = 1;
+        int salary = 0;
         Counter count = new Counter();
         Employee employee;
         int id;
