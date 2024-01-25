@@ -5,7 +5,8 @@ import program.employees.Employee;
 import java.text.NumberFormat;
 
 public class CalculationCost {
-    public static void calculationCost(Employee[] employees, Employee employee) {
+    public static void calculationCost(Employee[] employees) {
+        Employee employee;
         int sumCost = 0;
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         for (int i = 0; i < employees.length; i++) {

@@ -3,10 +3,14 @@ package program.methods.list;
 import program.counter.Counter;
 import program.employees.Employee;
 
+import java.util.Arrays;
+
 public class AddEmployees {
-    public static void addEmployees(Employee[] employees, Employee employee, String firstName, String middleName, String lustName,
-                                    int department, int salary, int id) {
+    public static void addEmployees(Employee[] employees , String firstName, String middleName, String lustName,
+                                    int department, int salary) {
         Counter count = new Counter();
+        Employee employee;
+        int id;
         for (int i = 0; i < employees.length; i++) {
             switch (i) {
                 case 0:
@@ -83,10 +87,8 @@ public class AddEmployees {
             count.increment();
             id = count.getCount();
             employee = new Employee(firstName, middleName, lustName, department, salary, id);
-            employee.setFullName(lustName, firstName, middleName);
-            employee.setDepartment(department);
-            employee.setSalary(salary);
             employees[i] = employee;
         }
+        System.out.println(Arrays.toString(employees));
     }
 }

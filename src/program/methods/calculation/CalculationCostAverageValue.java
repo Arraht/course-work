@@ -5,7 +5,8 @@ import program.employees.Employee;
 import java.text.NumberFormat;
 
 public class CalculationCostAverageValue {
-    public static void calculationCostAverageValue(Employee[] employees, Employee employee) {
+    public static void calculationCostAverageValue(Employee[] employees) {
+        Employee employee;
         float sumCostAverageValue = 0;
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         for (int i = 0; i < employees.length; i++) {

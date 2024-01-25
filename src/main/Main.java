@@ -1,6 +1,5 @@
 package main;
 
-import program.counter.Counter;
 import program.employees.Employee;
 
 import static program.methods.list.AddEmployees.addEmployees;
@@ -11,27 +10,20 @@ import static program.methods.calculation.CalculationCostAverageValue.calculatio
 import static program.methods.print.PrintFulName.printFulName;
 
 
-import java.util.Arrays;
-
-
 public class Main {
     public static void main(String[] args) {
-        Counter count = new Counter();
         Employee[] employees = new Employee[10];
-        String firstName = " ";
+        String firstName = "";
         String middleName = "";
         String lustName = "";
         int department = 1;
         int salary = 0;
-        int id = count.getCount();
-        Employee employee = new Employee(firstName, middleName, lustName, department, salary, id);
-        addEmployees(employees, employee, firstName, middleName, lustName, department, salary, id);
-        System.out.println(Arrays.toString(employees));
-        calculationCost(employees, employee);
-        searchMinSalary(employees, employee);
-        searchMaxSalary(employees, employee);
-        calculationCostAverageValue(employees, employee);
+        addEmployees(employees, firstName, middleName, lustName, department, salary);
+        calculationCost(employees);
+        searchMinSalary(employees);
+        searchMaxSalary(employees);
+        calculationCostAverageValue(employees);
         System.out.println();
-        printFulName(employees, employee);
+        printFulName(employees);
     }
 }

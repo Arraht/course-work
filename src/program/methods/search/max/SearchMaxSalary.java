@@ -5,7 +5,8 @@ import program.employees.Employee;
 import java.text.NumberFormat;
 
 public class SearchMaxSalary {
-    public static void searchMaxSalary(Employee[] employees, Employee employee) {
+    public static void searchMaxSalary(Employee[] employees) {
+        Employee employee;
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         employee = employees[0];
         String employeesName = "";
