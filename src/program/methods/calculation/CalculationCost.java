@@ -1,16 +1,14 @@
 package program.methods.calculation;
 
-import program.objects.employees.Employee;
+import program.employees.Employee;
 
 import java.text.NumberFormat;
 
 public class CalculationCost {
-    public static void calculationCost(Employee[] employees) {
-        Employee employee;
+    public static void printCalculationCost(Employee[] employees) {
         int sumCost = 0;
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
-        for (int i = 0; i < employees.length; i++) {
-            employee = employees[i];
+        for (Employee employee : employees) {
             sumCost += employee.getSalary();
         }
         System.out.println("Сумма всех затрат в месяц на зарплату сотсавила " + numberFormat.format(sumCost));

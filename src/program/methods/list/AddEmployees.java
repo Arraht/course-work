@@ -1,9 +1,6 @@
 package program.methods.list;
 
-import program.objects.counter.Counter;
-import program.objects.employees.Employee;
-
-import java.util.Arrays;
+import program.employees.Employee;
 
 public class AddEmployees {
     public static void addEmployees(Employee[] employees) {
@@ -12,9 +9,7 @@ public class AddEmployees {
         String lustName = "";
         int department = 1;
         int salary = 0;
-        Counter count = new Counter();
         Employee employee;
-        int id;
         for (int i = 0; i < employees.length; i++) {
             switch (i) {
                 case 0:
@@ -88,11 +83,9 @@ public class AddEmployees {
                     salary = 45000;
                     break;
             }
-            count.increment();
-            id = count.getCount();
+            int id = 0;
             employee = new Employee(firstName, middleName, lustName, department, salary, id);
             employees[i] = employee;
         }
-        System.out.println(Arrays.toString(employees));
     }
 }

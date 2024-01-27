@@ -1,4 +1,4 @@
-package program.objects.employees;
+package program.employees;
 
 
 import java.text.NumberFormat;
@@ -32,6 +32,7 @@ public class Employee {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+        this.fullName = this.lustName + " " + this.firstName + " " + this.middleName;
     }
 
     public String getMiddleName() {
@@ -40,6 +41,7 @@ public class Employee {
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
+        this.fullName = this.lustName + " " + this.firstName + " " + this.middleName;
     }
 
     public String getLustName() {
@@ -48,6 +50,7 @@ public class Employee {
 
     public void setLustName(String lustName) {
         this.lustName = lustName;
+        this.fullName = this.lustName + " " + this.firstName + " " + this.middleName;
     }
 
     public String getFullName() {
@@ -56,8 +59,10 @@ public class Employee {
     }
 
     public void setFullName(String lustName, String firstName, String middleName) {
-        fullName = lustName + " " + firstName + " " + middleName;
-        this.fullName = fullName;
+        this.lustName = lustName;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.fullName = lustName + " " + firstName + " " + middleName;
     }
 
     public int getDepartment() {
@@ -86,7 +91,7 @@ public class Employee {
 
     public String toString() {
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
-        return "\nФ.И.О сотрудника " + this.fullName + ", отдел сотрудника " + this.department + ", зарплата сотрудника" +
+        return "Ф.И.О сотрудника " + this.fullName + ", отдел сотрудника " + this.department + ", зарплата сотрудника" +
                 " равна " + numberFormat.format(this.salary) + ", ID сотрудника = " + this.id;
     }
 }
