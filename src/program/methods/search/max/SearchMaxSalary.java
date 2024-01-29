@@ -1,6 +1,6 @@
 package program.methods.search.max;
 
-import program.employees.Employee;
+import program.object.employees.Employee;
 
 import java.text.NumberFormat;
 

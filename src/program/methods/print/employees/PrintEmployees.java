@@ -1,6 +1,6 @@
 package program.methods.print.employees;
 
-import program.employees.Employee;
+import program.object.employees.Employee;
 
 public class PrintEmployees {
     public static void printEmployees(Employee[] employees) {

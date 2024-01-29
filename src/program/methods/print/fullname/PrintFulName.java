@@ -1,6 +1,6 @@
 package program.methods.print.fullname;
 
-import program.employees.Employee;
+import program.object.employees.Employee;
 
 public class PrintFulName {
     public static void printFulName(Employee[] employees) {

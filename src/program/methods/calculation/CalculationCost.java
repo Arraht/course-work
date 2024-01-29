@@ -1,6 +1,6 @@
 package program.methods.calculation;
 
-import program.employees.Employee;
+import program.object.employees.Employee;
 
 import java.text.NumberFormat;
 

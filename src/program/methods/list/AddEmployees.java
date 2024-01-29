@@ -1,9 +1,11 @@
 package program.methods.list;
 
-import program.employees.Employee;
+import program.object.employees.Employee;
+import program.object.counter.Counter;
+
 
 public class AddEmployees {
-    public static void addEmployees(Employee[] employees) {
+    public static void addEmployees(Employee[] employees, Counter counter, int id) {
         String firstName = "";
         String middleName = "";
         String lustName = "";
@@ -18,6 +20,7 @@ public class AddEmployees {
                     lustName = "Дмитриевна";
                     department = 5;
                     salary = 57820;
+                    id = counter.getId();
                     break;
                 case 1:
                     firstName = "Владимир";
@@ -25,6 +28,7 @@ public class AddEmployees {
                     lustName = "Карташов";
                     department = 4;
                     salary = 35124;
+                    id = counter.getId();
                     break;
                 case 2:
                     firstName = "Арсений";
@@ -32,6 +36,7 @@ public class AddEmployees {
                     lustName = "Иванов";
                     department = 5;
                     salary = 65482;
+                    id = counter.getId();
                     break;
                 case 3:
                     firstName = "Софья";
@@ -39,6 +44,7 @@ public class AddEmployees {
                     lustName = "Седова";
                     department = 3;
                     salary = 32579;
+                    id = counter.getId();
                     break;
                 case 4:
                     firstName = "Аврора";
@@ -46,6 +52,7 @@ public class AddEmployees {
                     lustName = "Ершова";
                     department = 1;
                     salary = 65880;
+                    id = counter.getId();
                     break;
                 case 5:
                     firstName = "Александра";
@@ -53,6 +60,7 @@ public class AddEmployees {
                     lustName = "Ларионова";
                     department = 3;
                     salary = 75850;
+                    id = counter.getId();
                     break;
                 case 6:
                     firstName = "Максим";
@@ -60,6 +68,7 @@ public class AddEmployees {
                     lustName = "Коровин";
                     department = 2;
                     salary = 40850;
+                    id = counter.getId();
                     break;
                 case 7:
                     firstName = "Анна";
@@ -67,6 +76,7 @@ public class AddEmployees {
                     lustName = "Кузьмина";
                     department = 1;
                     salary = 95000;
+                    id = counter.getId();
                     break;
                 case 8:
                     firstName = "Полина";
@@ -74,6 +84,7 @@ public class AddEmployees {
                     lustName = "Селезнева";
                     department = 5;
                     salary = 50000;
+                    id = counter.getId();
                     break;
                 case 9:
                     firstName = "Милана";
@@ -81,9 +92,9 @@ public class AddEmployees {
                     lustName = "Богданова";
                     department = 3;
                     salary = 45000;
+                    id = counter.getId();
                     break;
             }
-            int id = 0;
             employee = new Employee(firstName, middleName, lustName, department, salary, id);
             employees[i] = employee;
         }

@@ -1,4 +1,4 @@
-package program.employees;
+package program.object.employees;
 
 
 import java.text.NumberFormat;
